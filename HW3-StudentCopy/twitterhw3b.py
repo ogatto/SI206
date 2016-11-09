@@ -24,7 +24,7 @@ pol_count = 0
 subj_sum = 0
 subj_count = 0
 
-public_tweets = api.search('#Puppies')
+public_tweets = api.search('#NeverTrump')
 for tweet in public_tweets:
 	blob = TextBlob(tweet.text)
 	print(blob)
