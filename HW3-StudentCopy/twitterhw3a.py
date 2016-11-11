@@ -18,5 +18,5 @@ auth.set_access_token(access_token,access_token_secret)
 
 api = tweepy.API(auth)
 img = "hello.jpg"
-hashtag_txt = "#UMSI-206 #Proj3"
+hashtag_txt = "#UMSI-206 #Proj3 Created using Python"
 api.update_with_media(img, status=hashtag_txt)
