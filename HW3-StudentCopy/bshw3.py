@@ -24,10 +24,10 @@ soup = BeautifulSoup(r.text, 'lxml')
 
 student_text = soup.find_all(text=re.compile('student'))
 for line in student_text:
-	#if re.search('student', line):
-	text_sub = line.replace('student', 'AMAZING student')
-	#print (text_sub)
-	line.replace_with(text_sub)
+	if re.search('student', line):
+		text_sub = line.replace('student', 'AMAZING student')
+		#print (text_sub)
+		line.replace_with(text_sub)
 
 for img in soup.find_all('img'):
 	if	img['src'] == 'logo2.png':

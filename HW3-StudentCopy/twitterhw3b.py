@@ -32,7 +32,7 @@ for tweet in public_tweets:
 	polarity = sent.polarity
 	subjectivity = sent.subjectivity
 	#polarity = blob.sentiment.polarity
-	#subjectivity = blob.sentiment.subjectivity
+	#subjectivity = blob.sentiment.subjectivity #these derive different values...
 	pol_sum += polarity
 	pol_count += 1
 	subj_sum += subjectivity
